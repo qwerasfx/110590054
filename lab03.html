@@ -1,0 +1,105 @@
+<!-- LAB03 -->
+<!-- Deadline: 2022-10-19 23:59 -->
+<!-- Build your personal website -->
+
+<!-- [20%] 1. Contains at least five webpages(e.g., Home, Schedule, Information) -->
+<!-- [10%] (i) On top of each webpage should show a navigation bar. -->
+<!-- [10%] (ii) Navigation bar should be an unordered list and contain the links that direct to each web page respectively. -->
+<!-- [10%] (iii) Mouse move over to one of the navigation item, the background and text color should both change.
+                 The color combination must be one of the color palettes that provided by https://colorhunt.co/ 
+                 (text color, background color, hover text color & hover background color)  
+                 (Show the TA which color palette you choose when you get graded)-->
+
+<!-- 2. On one of your webpages, it should have the structure shown as below. (ref:LAB03.pdf) -->
+<!-- [20%] (i) Two sub-division (2a, 2b) that align horizontally. -->
+<!-- [10%] (ii) The background colors of division 1 should be different from 2a & 2b. -->
+<!-- [10%] (iii) In 2a, there should be one rounded images of youself followed by your name and job title. -->
+<!-- [10%] (iv) In 2b, there should be one unordered list below your biography. 
+                The unordered list should contain three list itemsthat showsin three different bullet colors. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*  CSS  */
+        .photo{
+            float:left;
+            width:50%;
+            background-color: #CFFF8D;
+        }
+
+        .text{
+            float:right;
+            width:50%;
+            background-color: #749F82;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #9E7676;
+        }
+
+        li a {
+            display: block;
+            color: #815B5B;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FFF8EA;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Don't forget to submit HTML file to your GitHub repository -->
+    <!-- Write your code here -->
+    <ul class="firstlist">
+        <li style="float: left"><a href="home.html">Home</a></li>
+        <li style="float: left"><a href="news.html">News</a></li>
+        <li style="float: left"><a href="Contact.html">Contact</a></li>
+        <li style="float: left"><a href="about.html">About</a></li>
+        <li style="float: left"><a href="hi.html">hi</a></li>
+    </ul>
+    <div class="photo">
+        <center>
+            <img src="密室照相.jpg"style='width:30%;border-radius:90%' ,title="hi"/>
+            <br>
+            <h1 style="background-color:rgb(255, 99, 71);"id="x">Name</h2>
+            <h2>Benson</h2>
+        </center>
+    </div>
+    <div class="text">
+        <h1 style="color:Tomato;">Biography</h1>
+        <h2 style="background-color:rgb(255, 99, 71);"id="x">Name</h2>
+        <p>Daniel</p>
+        <h3 style="background-color:rgb(255, 71, 227);">Birthday</h3>
+        <p>92/03/14</p>
+        <hr/>
+        <ol style="list-style-type:square;">
+            <li>學號:110590054</li>
+            <li>性別:男</li>
+            <li>嗜好:電影、小說、旅遊</li>
+            <ol style="list-style-type:square;">
+                <li style="background-color:rgb(110, 32, 180)">東園國小</li>
+                <li style="background-color:rgb(18, 12, 125)">東園國中</li>
+                <li style="background-color:rgb(175, 20, 20)">竹北高中</li>
+            </ol>
+            <dl>
+                <dt>旅遊</dt>
+                <dd>喜歡到處旅遊，親近各地的草與花</dd>
+            </dl>
+        </ol>
+        <hr/>
+        
+    </div>
+
+    </div>   
+</body>
+
+</html>
